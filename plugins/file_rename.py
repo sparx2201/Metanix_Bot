@@ -110,9 +110,9 @@ async def doc(bot, update):
     file_path = f"downloads/{new_filename}"
     file = update.message.reply_to_message
 
-    ms = await update.message.edit("⚠️ __**Please wait...**__\n\n**Tʀyɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅɪɴɢ....**")
+    ms = await update.message.edit("**Tʀyɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅɪɴɢ....**")
     try:
-        path = await bot.download_media(message=file, file_name=file_path, progress=progress_for_pyrogram, progress_args=("\n⚠️ __**Please wait...**__\n\n❄️ **Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time()))
+        path = await bot.download_media(message=file, file_name=file_path, progress=progress_for_pyrogram, progress_args=("**Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time()))
     except Exception as e:
         return await ms.edit(e)
 
@@ -123,7 +123,7 @@ async def doc(bot, update):
         metadata = await db.get_metadata_code(update.message.chat.id)
         if metadata:
 
-            await ms.edit("I Fᴏᴜɴᴅ Yᴏᴜʀ Mᴇᴛᴀᴅᴀᴛᴀ\n\n__**Pʟᴇᴀsᴇ Wᴀɪᴛ...**__\n**Aᴅᴅɪɴɢ Mᴇᴛᴀᴅᴀᴛᴀ Tᴏ Fɪʟᴇ....**")
+            await ms.edit("I Fᴏᴜɴᴅ Yᴏᴜʀ Mᴇᴛᴀᴅᴀᴛᴀ\n\n**Aᴅᴅɪɴɢ Mᴇᴛᴀᴅᴀᴛᴀ Tᴏ Fɪʟᴇ....**")
             cmd = f"""ffmpeg -i "{path}" {metadata} "{metadata_path}" """
 
             process = await asyncio.create_subprocess_shell(
@@ -138,9 +138,9 @@ async def doc(bot, update):
                     return await ms.edit(str(er) + "\n\n**Error**")
             except BaseException:
                 pass
-        await ms.edit("**Metadata added to the file successfully ✅**\n\n⚠️ __**Please wait...**__\n\n**Tʀyɪɴɢ Tᴏ Uᴩʟᴏᴀᴅɪɴɢ....**")
+        await ms.edit("**Metadata added to the file successfully ✅**\n\n**Tʀyɪɴɢ Tᴏ Uᴩʟᴏᴀᴅɪɴɢ....**")
     else:
-        await ms.edit("⚠️  __**Please wait...**__\n\n\n**Tʀyɪɴɢ Tᴏ Uᴩʟᴏᴀᴅɪɴɢ....**")
+        await ms.edit("**Tʀyɪɴɢ Tᴏ Uᴩʟᴏᴀᴅɪɴɢ....**")
 
     duration = 0
     try:
@@ -190,7 +190,7 @@ async def doc(bot, update):
                     thumb=ph_path,
                     caption=caption,
                     progress=progress_for_pyrogram,
-                    progress_args=("⚠️ __**Please wait...**__\n\n🌨️ **Uᴩʟᴏᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time()))
+                    progress_args=("**Uᴩʟᴏᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time()))
 
                 from_chat = filw.chat.id
                 mg_id = filw.id
@@ -209,7 +209,7 @@ async def doc(bot, update):
                     height=height,
                     duration=duration,
                     progress=progress_for_pyrogram,
-                    progress_args=("⚠️ __**Please wait...**__\n\n🌨️ **Uᴩʟᴏᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time()))
+                    progress_args=("**Uᴩʟᴏᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time()))
 
                 from_chat = filw.chat.id
                 mg_id = filw.id
@@ -225,7 +225,7 @@ async def doc(bot, update):
                     thumb=ph_path,
                     duration=duration,
                     progress=progress_for_pyrogram,
-                    progress_args=("⚠️ __**Please wait...**__\n\n🌨️ **Uᴩʟᴏᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time()))
+                    progress_args=("**Uᴩʟᴏᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time()))
 
                 from_chat = filw.chat.id
                 mg_id = filw.id
@@ -254,7 +254,7 @@ async def doc(bot, update):
                     thumb=ph_path,
                     caption=caption,
                     progress=progress_for_pyrogram,
-                    progress_args=("⚠️ __**Please wait...**__\n\n🌨️ **Uᴩʟᴏᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time()))
+                    progress_args=("**Uᴩʟᴏᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time()))
             elif type == "video":
                 await bot.send_video(
                     update.message.chat.id,
@@ -265,7 +265,7 @@ async def doc(bot, update):
                     height=height,
                     duration=duration,
                     progress=progress_for_pyrogram,
-                    progress_args=("⚠️ __**Please wait...**__\n\n🌨️ **Uᴩʟᴏᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time()))
+                    progress_args=("**Uᴩʟᴏᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time()))
             elif type == "audio":
                 await bot.send_audio(
                     update.message.chat.id,
@@ -274,7 +274,7 @@ async def doc(bot, update):
                     thumb=ph_path,
                     duration=duration,
                     progress=progress_for_pyrogram,
-                    progress_args=("⚠️ __**Please wait...**__\n\n🌨️ **Uᴩʟᴏᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time()))
+                    progress_args=("**Uᴩʟᴏᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time()))
         except Exception as e:
             os.remove(file_path)
             if ph_path:
