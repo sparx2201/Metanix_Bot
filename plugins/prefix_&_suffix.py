@@ -19,7 +19,7 @@ async def delete_prefix(client, message):
     SnowDev = await message.reply_text("Please Wait ...", reply_to_message_id=message.id)
     prefix = await db.get_prefix(message.from_user.id)
     if not prefix:
-        return await SnowDev.edit("__**😔 ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ ᴘʀᴇꜰɪx**__")
+        return await SnowDev.edit("__** ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ ᴘʀᴇꜰɪx**__")
     await db.set_prefix(message.from_user.id, None)
     await SnowDev.edit("__**❌️ ᴘʀᴇꜰɪx ᴅᴇʟᴇᴛᴇᴅ**__")
 
@@ -32,7 +32,7 @@ async def see_caption(client, message):
     if prefix:
         await SnowDev.edit(f"**ʏᴏᴜʀ ᴘʀᴇꜰɪx:-**\n\n`{prefix}`")
     else:
-        await SnowDev.edit("__**😔 ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ ᴘʀᴇꜰɪx**__")
+        await SnowDev.edit("__** ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ ᴘʀᴇꜰɪx**__")
 
 
 # SUFFIX
@@ -53,7 +53,7 @@ async def delete_suffix(client, message):
     SnowDev = await message.reply_text("Please Wait ...", reply_to_message_id=message.id)
     suffix = await db.get_suffix(message.from_user.id)
     if not suffix:
-        return await SnowDev.edit("__**😔 ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ ꜱᴜꜰꜰɪx**__")
+        return await SnowDev.edit("__** ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ ꜱᴜꜰꜰɪx**__")
     await db.set_suffix(message.from_user.id, None)
     await SnowDev.edit("__**❌️ ꜱᴜꜰꜰɪx ᴅᴇʟᴇᴛᴇᴅ**__")
 
@@ -66,4 +66,4 @@ async def see_csuffix(client, message):
     if suffix:
         await SnowDev.edit(f"**ʏᴏᴜʀ ꜱᴜꜰꜰɪx:-**\n\n`{suffix}`")
     else:
-        await SnowDev.edit("__**😔 ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ ꜱᴜꜰꜰɪx**__")
+        await SnowDev.edit("__** ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ ꜱᴜꜰꜰɪx**__")
