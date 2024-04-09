@@ -41,7 +41,7 @@ class Txt(object):
     # part of text configuration
     START_TXT = """<b>Hey {} </b>
     
-➻ Tʜɪꜱ Iꜱ Aɴ Aᴅᴠᴀɴᴄᴇᴅ Aɴᴅ Yᴇᴛ Pᴏᴡᴇʀꜰᴜʟ Aɴᴅ Aᴅᴠᴀɴᴄᴇ Rᴇɴᴀᴍᴇʀ.⚡️
+➻ Tʜɪꜱ Iꜱ Aɴ Aᴅᴠᴀɴᴄᴇᴅ Aɴᴅ Yᴇᴛ Pᴏᴡᴇʀꜰᴜʟ Aɴᴅ Aᴅᴠᴀɴᴄᴇ Mᴇᴛᴀᴅᴀᴛᴀ Rᴇɴᴀᴍᴇʀ.⚡️
 
 ➻ Uꜱɪɴɢ Tʜɪꜱ Bᴏᴛ Yᴏᴜ Cᴀɴ Rᴇɴᴀᴍᴇ Aɴᴅ Cʜᴀɴɢᴇ Tʜᴜᴍʙɴᴀɪʟ Oғ Yᴏᴜʀ Fɪʟᴇꜱ.🖼
 
