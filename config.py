@@ -84,9 +84,9 @@ Exᴀᴍᴩʟᴇ:- <code> /set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
     SEND_METADATA = """
 ❪ SET CUSTOM METADATA ❫
 
-☞ Fᴏʀ Exᴀᴍᴘʟᴇ:-
+Fᴏʀ Exᴀᴍᴘʟᴇ:-
 
-◦ <code> -map 0 -c:s copy -c:a copy -c:v copy -metadata title="Powered By:- AJ -metadata author="@Snowball_Official" -metadata:s:s title="Subtitled By :- @Kdramaland" -metadata:s:a title="By :- @Kdramaland" -metadata:s:v title="By:- @Snowball_Official" </code>
+◦ <code>  -map 0 -c:s copy -c:a copy -c:v copy -metadata title="Created By:- 𝘈𝘑" -metadata author="𝘈𝘑" -metadata:s:s title="Subtitled By :- @MetaNiXbot" -metadata:s:a title="By :- @MetaNiXbot" -metadata:s:v title="By:- 𝘈𝘑" </code>
 
 📥 Fᴏʀ Hᴇʟᴘ Cᴏɴᴛ. @Snowball_Official
 """
