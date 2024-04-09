@@ -86,7 +86,7 @@ Exᴀᴍᴩʟᴇ:- <code> /set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
 
 ☞ Fᴏʀ Exᴀᴍᴘʟᴇ:-
 
-◦ <code> -map 0 -c:s copy -c:a copy -c:v copy -metadata title="Powered By:- @Kdramaland" -metadata author="@Snowball_Official" -metadata:s:s title="Subtitled By :- @Kdramaland" -metadata:s:a title="By :- @Kdramaland" -metadata:s:v title="By:- @Snowball_Official" </code>
+◦ <code> -map 0 -c:s copy -c:a copy -c:v copy -metadata title="Powered By:- AJ -metadata author="@Snowball_Official" -metadata:s:s title="Subtitled By :- @Kdramaland" -metadata:s:a title="By :- @Kdramaland" -metadata:s:v title="By:- @Snowball_Official" </code>
 
 📥 Fᴏʀ Hᴇʟᴘ Cᴏɴᴛ. @Snowball_Official
 """
